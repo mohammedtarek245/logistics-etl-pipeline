@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# OS / editor noise
+.DS_Store
+.vscode/
+.idea/

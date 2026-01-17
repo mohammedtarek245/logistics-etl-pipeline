@@ -1,0 +1,269 @@
+{
+  "order_id": "ORD-2020-08-17-987654",
+  "order_number": "LG20200817098765",
+  "order_type": "delivery",
+  "order_status": "delivered",
+  "created_at": "2020-08-17T09:15:32.440Z",
+  "updated_at": "2020-08-17T14:53:28.122Z",
+  "scheduled_pickup_time": "2020-08-17T10:00:00.000Z",
+  "actual_pickup_time": "2020-08-17T10:23:15.000Z",
+  "scheduled_delivery_time": "2020-08-17T13:00:00.000Z",
+  "actual_delivery_time": "2020-08-17T14:53:28.000Z",
+  "customer": {
+    "customer_id": "CUST-445821",
+    "first_name": "Ahmed",
+    "last_name": "Hassan",
+    "phone": "+201012345678",
+    "email": "ahmed.hassan@example.com",
+    "is_verified": true
+  },
+  "merchant": {
+    "merchant_id": "MERCH-78932",
+    "business_name": "Cairo Electronics Store",
+    "contact_name": "Mohamed Youssef",
+    "phone": "+201098765432",
+    "email": "info@cairoelectronics.com",
+    "category": "electronics"
+  },
+  "pickup_address": {
+    "address_id": "ADDR-PU-556677",
+    "floor": "3",
+    "apartment": "12",
+    "building": "15",
+    "street": "El Thawra Street",
+    "area": "Nasr City",
+    "city": "Cairo",
+    "district": "Nasr City",
+    "governorate": "Cairo",
+    "postal_code": "11371",
+    "country": "Egypt",
+    "country_code": "EG",
+    "geo_location": {
+      "latitude": 30.0444196,
+      "longitude": 31.3381516
+    },
+    "landmark": "Near Family Mall",
+    "special_instructions": "Call upon arrival"
+  },
+  "dropoff_address": {
+    "address_id": "ADDR-DO-778899",
+    "floor": "5",
+    "apartment": "22",
+    "building": "8",
+    "street": "Dr. Mohamed Youssef Moussa Street",
+    "area": "6th of October City",
+    "city": "6th of October",
+    "district": "6th of October",
+    "governorate": "Giza",
+    "postal_code": "12573",
+    "country": "Egypt",
+    "country_code": "EG",
+    "geo_location": {
+      "latitude": 29.9287827,
+      "longitude": 30.9187827
+    },
+    "landmark": "Behind Mall of Arabia",
+    "special_instructions": "Ring doorbell twice"
+  },
+  "items": [
+    {
+      "item_id": "ITEM-001",
+      "sku": "ELEC-LAP-HP-2020",
+      "name": "HP Laptop 15-DW3000",
+      "description": "15.6 inch laptop, Intel Core i5, 8GB RAM",
+      "category": "electronics",
+      "quantity": 1,
+      "unit_price": 12500.0,
+      "total_price": 12500.0,
+      "weight_kg": 2.1,
+      "dimensions": {
+        "length_cm": 40,
+        "width_cm": 30,
+        "height_cm": 5
+      }
+    },
+    {
+      "item_id": "ITEM-002",
+      "sku": "ACC-MOUSE-LOG-M190",
+      "name": "Logitech M190 Wireless Mouse",
+      "description": "Wireless mouse with USB receiver",
+      "category": "accessories",
+      "quantity": 2,
+      "unit_price": 250.0,
+      "total_price": 500.0,
+      "weight_kg": 0.15,
+      "dimensions": {
+        "length_cm": 12,
+        "width_cm": 8,
+        "height_cm": 4
+      }
+    }
+  ],
+  "payment": {
+    "payment_id": "PAY-20200817-445566",
+    "payment_method": "cash_on_delivery",
+    "payment_status": "collected",
+    "currency": "EGP",
+    "subtotal": 13000.0,
+    "delivery_fee": 50.0,
+    "service_fee": 15.0,
+    "discount_amount": 0.0,
+    "total_amount": 13065.0,
+    "collected_amount": 13065.0,
+    "is_paid_back": false,
+    "collected_at": "2020-08-17T14:53:28.122Z",
+    "collected_from_business": {
+      "date": "2020-08-18T10:00:00.000Z",
+      "status": "pending"
+    }
+  },
+  "driver": {
+    "driver_id": "DRV-33421",
+    "first_name": "Sherif",
+    "last_name": "Ali",
+    "phone": "+201155443322",
+    "vehicle_type": "motorcycle",
+    "vehicle_plate": "ABC 1234",
+    "rating": 4.7,
+    "total_deliveries": 1523
+  },
+  "tracking": {
+    "tracker_id": "TRK-M1S5Y735qEwKa",
+    "tracking_url": "https://track.logistics.com/TRK-M1S5Y735qEwKa",
+    "current_status": "delivered",
+    "estimated_delivery_time": "2020-08-17T13:30:00.000Z"
+  },
+  "order_actions": [
+    {
+      "action_id": "ACT-001",
+      "action_type": "order_created",
+      "status": "created",
+      "timestamp": "2020-08-17T09:15:32.440Z",
+      "performed_by": "customer",
+      "performed_by_id": "CUST-445821",
+      "notes": "Order placed by customer"
+    },
+    {
+      "action_id": "ACT-002",
+      "action_type": "order_confirmed",
+      "status": "confirmed",
+      "timestamp": "2020-08-17T09:22:18.000Z",
+      "performed_by": "merchant",
+      "performed_by_id": "MERCH-78932",
+      "notes": "Merchant confirmed order"
+    },
+    {
+      "action_id": "ACT-003",
+      "action_type": "driver_assigned",
+      "status": "assigned",
+      "timestamp": "2020-08-17T09:45:00.000Z",
+      "performed_by": "system",
+      "performed_by_id": "SYS-AUTO",
+      "notes": "Driver assigned automatically",
+      "metadata": {
+        "driver_id": "DRV-33421",
+        "driver_name": "Sherif Ali"
+      }
+    },
+    {
+      "action_id": "ACT-004",
+      "action_type": "pickup_started",
+      "status": "en_route_to_pickup",
+      "timestamp": "2020-08-17T10:05:12.000Z",
+      "performed_by": "driver",
+      "performed_by_id": "DRV-33421",
+      "notes": "Driver heading to pickup location",
+      "geo_location": {
+        "latitude": 30.0626,
+        "longitude": 31.2497
+      }
+    },
+    {
+      "action_id": "ACT-005",
+      "action_type": "arrived_at_pickup",
+      "status": "at_pickup",
+      "timestamp": "2020-08-17T10:20:45.000Z",
+      "performed_by": "driver",
+      "performed_by_id": "DRV-33421",
+      "notes": "Driver arrived at merchant location",
+      "geo_location": {
+        "latitude": 30.0444196,
+        "longitude": 31.3381516
+      }
+    },
+    {
+      "action_id": "ACT-006",
+      "action_type": "order_picked_up",
+      "status": "picked_up",
+      "timestamp": "2020-08-17T10:23:15.000Z",
+      "performed_by": "driver",
+      "performed_by_id": "DRV-33421",
+      "notes": "Order picked up from merchant",
+      "geo_location": {
+        "latitude": 30.0444196,
+        "longitude": 31.3381516
+      }
+    },
+    {
+      "action_id": "ACT-007",
+      "action_type": "delivery_started",
+      "status": "en_route_to_delivery",
+      "timestamp": "2020-08-17T10:25:00.000Z",
+      "performed_by": "driver",
+      "performed_by_id": "DRV-33421",
+      "notes": "Driver heading to customer location",
+      "geo_location": {
+        "latitude": 30.0444196,
+        "longitude": 31.3381516
+      }
+    },
+    {
+      "action_id": "ACT-008",
+      "action_type": "arrived_at_delivery",
+      "status": "at_delivery",
+      "timestamp": "2020-08-17T14:48:22.000Z",
+      "performed_by": "driver",
+      "performed_by_id": "DRV-33421",
+      "notes": "Driver arrived at customer location",
+      "geo_location": {
+        "latitude": 29.9287827,
+        "longitude": 30.9187827
+      }
+    },
+    {
+      "action_id": "ACT-009",
+      "action_type": "order_delivered",
+      "status": "delivered",
+      "timestamp": "2020-08-17T14:53:28.122Z",
+      "performed_by": "driver",
+      "performed_by_id": "DRV-33421",
+      "notes": "Order successfully delivered to customer",
+      "geo_location": {
+        "latitude": 29.9287827,
+        "longitude": 30.9187827
+      },
+      "metadata": {
+        "signature_url": "https://cdn.logistics.com/signatures/ORD-2020-08-17-987654.png",
+        "photo_url": "https://cdn.logistics.com/delivery-photos/ORD-2020-08-17-987654.jpg",
+        "received_by": "Ahmed Hassan"
+      }
+    }
+  ],
+  "notes": {
+    "customer_notes": "Please handle with care, fragile items",
+    "merchant_notes": "Items packed securely in bubble wrap",
+    "driver_notes": "Customer was very satisfied",
+    "internal_notes": "High-value order, priority delivery"
+  },
+  "metadata": {
+    "source_platform": "mobile_app",
+    "app_version": "3.2.1",
+    "device_type": "android",
+    "promo_code": null,
+    "is_first_order": false,
+    "customer_rating": 5,
+    "customer_feedback": "Fast delivery, excellent service!",
+    "driver_rating": 5,
+    "rated_at": "2020-08-17T15:10:00.000Z"
+  }
+}
