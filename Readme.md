@@ -2,7 +2,7 @@
 
 ETL pipeline for transforming unstructured JSON order files into a normalized MySQL relational schema.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 order-etl/
@@ -66,7 +66,7 @@ python main.py
 # Then enter the directory path when prompted
 ```
 
-## 📊 Data Flow
+## Data Flow
 
 ```
 JSON Files (Directory)
@@ -91,7 +91,7 @@ JSON Files (Directory)
 MySQL Database (Normalized Schema)
 ```
 
-## 🗄️ Database Schema
+## Database Schema
 
 ### Dimension Tables
 - `customers` - Customer profiles (natural key: phone)
@@ -127,7 +127,7 @@ MySQL Database (Normalized Schema)
 - Console output for real-time monitoring
 - Detailed error traces for debugging
 
-## 📝 JSON Structure Expected
+## JSON Structure Expected
 
 ```json
 {
@@ -201,7 +201,7 @@ MySQL Database (Normalized Schema)
 }
 ```
 
-## 🧪 Testing Individual Modules
+## Testing Individual Modules
 
 ### Test Extract
 ```bash
@@ -233,7 +233,7 @@ python load.py
 3. Call from `load_transformed_order()` in correct FK order
 4. Update README documentation
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **No localStorage/browser storage** - All processing is server-side Python
 - **Windows paths** - Use double backslashes or raw strings: `r"C:\path\to\files"`, so you dont get any unicode error
@@ -242,7 +242,7 @@ python load.py
 - **Schema** - All tables must exist before running ETL
 - **Batch size** - No artificial limits; processes all files in directory
 
-## 📧 Future Enhancements (Not Implemented)
+## Future Enhancements (Not Implemented)
 
 - this pipline acts as a mold expecting many json files perday so scalabily is supported
 - we can use airflow for automation and sechudling
@@ -252,7 +252,7 @@ python load.py
 - Data quality dashboards
 - Automated schema validation
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "No module named 'mysql.connector'"
 ```bash
