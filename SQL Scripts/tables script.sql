@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS bosta_etl;
-USE bosta_etl;
+CREATE DATABASE IF NOT EXISTS DB_etl;
+USE DB_etl;
 
 
 
