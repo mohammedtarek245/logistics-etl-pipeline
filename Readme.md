@@ -2,6 +2,9 @@
 
 ETL pipeline for transforming unstructured JSON order files into a normalized MySQL relational schema.
 
+-This is the cloud architeture of this whole solution on aws :
+<img width="2289" height="1960" alt="Blank diagram(1)" src="https://github.com/user-attachments/assets/4f30ee96-36f7-41db-b566-af7b940344b3" />
+
 ##  Project Structure
 
 ```
